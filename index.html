@@ -2,121 +2,64 @@
 <html lang="vi">
 <head>
 <meta charset="UTF-8">
-<title>Mỹ Vị – Mì trộn khô tiện lợi</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+<title>MỸ VỊ – Mì trộn khô</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #f4f4f4;
-}
-header {
-    background: #111;
-    color: white;
-    padding: 20px;
-}
-.nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.nav img {
-    height: 50px;
-}
-.nav a {
-    color: white;
-    text-decoration: none;
-    margin-left: 16px;
-}
-.hero {
-    background: white;
-    padding: 40px;
-    text-align: center;
-}
-.hero img {
-    width: 100%;
-    max-width: 600px;
-    border-radius: 12px;
-}
-.section {
-    background: white;
-    margin: 20px;
-    padding: 30px;
-    border-radius: 12px;
-}
-.products {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 20px;
-}
-.product {
-    border: 1px solid #ddd;
-    padding: 16px;
-    border-radius: 12px;
-    text-align: center;
-}
-.product img {
-    width: 100%;
-    border-radius: 8px;
-}
-footer {
-    text-align: center;
-    padding: 20px;
-    color: #777;
-}
+body{font-family:Arial;margin:0;background:#fafafa}
+header{background:#c62828;color:#fff;padding:16px}
+nav a{color:#fff;margin-right:16px;text-decoration:none;font-weight:bold}
+.products{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;padding:20px}
+.card{background:#fff;border:1px solid #ddd;padding:15px}
+.card img{width:100%;height:auto}
+button{background:#c62828;color:#fff;border:none;padding:10px;width:100%;font-size:16px}
 </style>
 </head>
 
 <body>
 
 <header>
-    <div class="nav">
-        <img src="images/logo.png" alt="Logo Mỹ Vị">
-        <div>
-            <a href="#sanpham">Sản phẩm</a>
-            <a href="#gioithieu">Giới thiệu</a>
-            <a href="#lienhe">Liên hệ</a>
-        </div>
-    </div>
+<h1>MỸ VỊ – Mì trộn khô</h1>
+<nav>
+<a href="index.html">Trang chủ</a>
+<a href="https://myvi-food.wordpress.com" target="_blank">Blog</a>
+</nav>
 </header>
 
-<section class="hero">
-    <h1>Mì trộn Mỹ Vị</h1>
-    <p>Đậm đà – Tiện lợi – Chuẩn vị</p>
-    <img src="images/banner.jpg" alt="Mì trộn Mỹ Vị">
-</section>
+<section class="products">
 
-<section class="section" id="sanpham">
-    <h2>Sản phẩm</h2>
-    <div class="products">
-        <div class="product">
-            <img src="images/goi1.jpg">
-            <h3>Mì trộn Mỹ Vị – Gói cay</h3>
-            <p>Hương vị đậm đà</p>
-        </div>
-        <div class="product">
-            <img src="images/goi2.jpg">
-            <h3>Mì trộn Mỹ Vị – Gói truyền thống</h3>
-            <p>Dễ ăn mỗi ngày</p>
-        </div>
-    </div>
-</section>
+<!-- VỊ TRUYỀN THỐNG -->
+<div class="card">
+<img src="vi-truyen-thong.jpg" alt="Mì trộn Mỹ Vị vị Truyền thống">
+<h3>MỸ VỊ – Vị Truyền thống</h3>
+<p>Giá: 20.000đ</p>
+<a href="product.html?name=My%20Vi%20Truyen%20Thong&price=20000">
+<button>Mua ngay</button>
+</a>
+</div>
 
-<section class="section" id="gioithieu">
-    <h2>Giới thiệu</h2>
-    <p>Mỹ Vị là thương hiệu mì trộn khô tiện lợi, phù hợp với nhịp sống hiện đại.</p>
-</section>
+<!-- VỊ CAY -->
+<div class="card">
+<img src="vi-cay.jpg" alt="Mì trộn Mỹ Vị vị Cay">
+<h3>MỸ VỊ – Vị Cay</h3>
+<p>Giá: 22.000đ</p>
+<a href="product.html?name=My%20Vi%20Vi%20Cay&price=22000">
+<button>Mua ngay</button>
+</a>
+</div>
 
-<section class="section" id="lienhe">
-    <h2>Liên hệ</h2>
-    <p>Email: contact@myvi.com</p>
-</section>
+<!-- VỊ ĐẶC BIỆT -->
+<div class="card">
+<img src="vi-dac-biet.jpg" alt="Mì trộn Mỹ Vị vị Đặc biệt">
+<h3>MỸ VỊ – Vị Đặc biệt</h3>
+<p>Giá: 25.000đ</p>
+<a href="product.html?name=My%20Vi%20Dac%20Biet&price=25000">
+<button>Mua ngay</button>
+</a>
+</div>
 
-<footer>
-    © 2026 Mỹ Vị
-</footer>
+</section>
 
 </body>
 </html>
+
 
