@@ -1,78 +1,122 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <title>Website miễn phí của tôi</title>
-    <meta name="description" content="Website bán hàng miễn phí, thiết kế đơn giản">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background: #f5f5f5;
-        }
-        header {
-            background: #111;
-            color: white;
-            padding: 16px;
-            text-align: center;
-        }
-        section {
-            padding: 20px;
-            max-width: 900px;
-            margin: auto;
-            background: white;
-            margin-top: 16px;
-            border-radius: 8px;
-        }
-        .product {
-            border: 1px solid #ddd;
-            padding: 16px;
-            border-radius: 8px;
-        }
-        button {
-            padding: 10px 16px;
-            background: black;
-            color: white;
-            border: none;
-            cursor: pointer;
-        }
-        footer {
-            text-align: center;
-            padding: 16px;
-            color: #777;
-        }
-    </style>
+<meta charset="UTF-8">
+<title>Mỹ Vị – Mì trộn khô tiện lợi</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+}
+header {
+    background: #111;
+    color: white;
+    padding: 20px;
+}
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav img {
+    height: 50px;
+}
+.nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 16px;
+}
+.hero {
+    background: white;
+    padding: 40px;
+    text-align: center;
+}
+.hero img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 12px;
+}
+.section {
+    background: white;
+    margin: 20px;
+    padding: 30px;
+    border-radius: 12px;
+}
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+.product {
+    border: 1px solid #ddd;
+    padding: 16px;
+    border-radius: 12px;
+    text-align: center;
+}
+.product img {
+    width: 100%;
+    border-radius: 8px;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #777;
+}
+</style>
 </head>
+
 <body>
 
 <header>
-    <h1>Website của tôi</h1>
-    <p>Bán hàng - Giới thiệu - Liên hệ</p>
+    <div class="nav">
+        <img src="images/logo.png" alt="Logo Mỹ Vị">
+        <div>
+            <a href="#sanpham">Sản phẩm</a>
+            <a href="#gioithieu">Giới thiệu</a>
+            <a href="#lienhe">Liên hệ</a>
+        </div>
+    </div>
 </header>
 
-<section>
+<section class="hero">
+    <h1>Mì trộn Mỹ Vị</h1>
+    <p>Đậm đà – Tiện lợi – Chuẩn vị</p>
+    <img src="images/banner.jpg" alt="Mì trộn Mỹ Vị">
+</section>
+
+<section class="section" id="sanpham">
     <h2>Sản phẩm</h2>
-    <div class="product">
-        <h3>Tên sản phẩm</h3>
-        <p>Mô tả ngắn về sản phẩm.</p>
-        <p><strong>Giá:</strong> Liên hệ</p>
+    <div class="products">
+        <div class="product">
+            <img src="images/goi1.jpg">
+            <h3>Mì trộn Mỹ Vị – Gói cay</h3>
+            <p>Hương vị đậm đà</p>
+        </div>
+        <div class="product">
+            <img src="images/goi2.jpg">
+            <h3>Mì trộn Mỹ Vị – Gói truyền thống</h3>
+            <p>Dễ ăn mỗi ngày</p>
+        </div>
     </div>
 </section>
 
-<section>
-    <h2>Liên hệ mua hàng</h2>
-    <form action="https://formsubmit.co/mitronmyvi@gmail.com" method="POST">
-        <input type="text" name="name" placeholder="Tên của bạn" required><br><br>
-        <input type="email" name="email" placeholder="Email" required><br><br>
-        <textarea name="message" placeholder="Nội dung"></textarea><br><br>
-        <button type="submit">Gửi</button>
-    </form>
+<section class="section" id="gioithieu">
+    <h2>Giới thiệu</h2>
+    <p>Mỹ Vị là thương hiệu mì trộn khô tiện lợi, phù hợp với nhịp sống hiện đại.</p>
+</section>
+
+<section class="section" id="lienhe">
+    <h2>Liên hệ</h2>
+    <p>Email: contact@myvi.com</p>
 </section>
 
 <footer>
-    © 2026 Website
+    © 2026 Mỹ Vị
 </footer>
 
 </body>
 </html>
+
