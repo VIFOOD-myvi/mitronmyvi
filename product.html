@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Chi tiết sản phẩm</title>
+</head>
+
+<body>
+
+<h1 id="productName"></h1>
+<p>Giá: <strong><span id="productPrice"></span>đ</strong></p>
+
+<a id="orderLink">
+<button>Đặt mua sản phẩm này</button>
+</a>
+
+<script>
+const params = new URLSearchParams(window.location.search);
+const name = params.get("name");
+const price = params.get("price");
+
+document.getElementById("productName").innerText = name;
+document.getElementById("productPrice").innerText = price;
+document.getElementById("orderLink").href =
+  "order.html?product=" + encodeURIComponent(name);
+</script>
+
+</body>
+</html>
